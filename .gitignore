@@ -1,0 +1,10 @@
+# local dev harness and backups, not part of the published site
+serve.ps1
+build-artifact.ps1
+artifact.html
+artifact-preview.html
+.gsap-cache/
+img/orig/
+img/orig2/
+_*.html
+.playwright-mcp/

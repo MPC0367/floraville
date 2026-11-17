@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Golf Course in Pathum Thani with Night Golf | Flora Ville</title>
+<meta name="description" content="Play a Nick Faldo golf course in Pathum Thani, 45 minutes from Bangkok. Eighteen holes across twelve lakes, floodlit night golf until late. Book a tee time.">
+<link rel="canonical" href="https://mpc0367.github.io/floraville/">
+<meta property="og:title" content="Golf Course in Pathum Thani with Night Golf | Flora Ville">
+<meta property="og:description" content="Play a Nick Faldo golf course in Pathum Thani, 45 minutes from Bangkok. Eighteen holes across twelve lakes, floodlit night golf until late. Book a tee time.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mpc0367.github.io/floraville/">
+<meta property="og:image" content="https://mpc0367.github.io/floraville/img/hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0E1F17">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GolfCourse",
+  "name": "Flora Ville Golf & Country Club",
+  "alternateName": "ฟลอร่าวิลล์ กอล์ฟ แอนด์ คันทรี คลับ",
+  "description": "18-hole Nick Faldo designed parkland golf course in Pathum Thani, 45 minutes north of Bangkok. Par 72, 6,728 yards, night golf under floodlights.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "110 Moo 8, Bangkok-Pathum Thani Road",
+    "addressLocality": "Bang Khu Wat, Mueang Pathum Thani",
+    "addressRegion": "Pathum Thani",
+    "postalCode": "12000",
+    "addressCountry": "TH"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 13.9725, "longitude": 100.5038 },
+  "hasMap": "https://maps.google.com/?q=Flora+Ville+Golf+%26+Country+Club",
+  "telephone": "+66-2-598-2555",
+  "email": "sale.1@floravillegolf.com",
+  "openingHours": "Mo-Su 06:00-18:00",
+  "sameAs": ["https://www.floravillegolf.com", "https://www.facebook.com/FloraVilleGolf"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,320;0,9..144,420;0,9..144,560;1,9..144,340;1,9..144,420&family=Archivo:wght@400;500;640&family=Spline+Sans+Mono:wght@400;500&family=Trirong:wght@400;500;600&family=Anuphan:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+<script src="i18n.js" defer></script>
+<script src="main.js" defer></script>
+</head>
+<body data-lang="en">
+<noscript><style>.l{transform:none}.rise{opacity:1;transform:none}.round-stage,.round-hint,.round-hint-m,.loader,.fab,.daytint{display:none !important}.hero-imgwrap img{transform:none}.gal-track{overflow-x:auto}</style></noscript>
+
+<!-- arrival: the mark draws itself -->
+<div class="loader" id="loader" aria-hidden="true">
+  <svg class="loader-mark" viewBox="0 0 132 132" aria-hidden="true">
+    <rect class="lk lk1" x="22" y="14" width="64" height="86" rx="32" pathLength="100"></rect>
+    <rect class="lk lk2" x="46" y="32" width="64" height="86" rx="32" pathLength="100"></rect>
+  </svg>
+  <p class="loader-word mono">Flora Ville</p>
+</div>
+
+<!-- day tint: dawn gold eases into dusk rose as the page is played -->
+<a class="skip" href="#course" data-i18n="a11y.skip">Skip to content</a>
+
+<!-- ============================== HEADER ============================== -->
+<header class="hdr" id="hdr">
+  <a class="hdr-brand" href="#top" aria-label="Flora Ville Golf & Country Club, top of page">
+    <img class="hdr-mark" src="img/logo-a.png" alt="" width="30" height="30">
+    <span class="hdr-word">Flora&nbsp;Ville</span>
+  </a>
+  <nav class="hdr-nav" aria-label="Primary">
+    <a href="#course" data-i18n="nav.course">The course</a>
+    <a href="#round" data-i18n="nav.round">The round</a>
+    <a href="#night" data-i18n="nav.night">Night golf</a>
+    <a href="#club" data-i18n="nav.club">Clubhouse</a>
+    <a href="#visit" data-i18n="nav.visit">Visit</a>
+  </nav>
+  <div class="hdr-side">
+    <button class="lang" id="langBtn" type="button" aria-label="เปลี่ยนเป็นภาษาไทย, switch language">
+      <span class="lang-opt is-on" data-l="en">EN</span><span class="lang-sep">/</span><span class="lang-opt" data-l="th">ไทย</span>
+    </button>
+    <a class="btn btn-book" href="#visit" data-book data-i18n="nav.book">Book a tee time</a>
+    <button class="burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="sheet">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- mobile sheet -->
+<div class="sheet" id="sheet" aria-hidden="true">
+  <nav class="sheet-nav" aria-label="Menu">
+    <a href="#course"><span class="sheet-i mono">01</span><span data-i18n="nav.course">The course</span></a>
+    <a href="#round"><span class="sheet-i mono">02</span><span data-i18n="nav.round">The round</span></a>
+    <a href="#night"><span class="sheet-i mono">05</span><span data-i18n="nav.night">Night golf</span></a>
+    <a href="#club"><span class="sheet-i mono">06</span><span data-i18n="nav.club">Clubhouse</span></a>
+    <a href="#visit"><span class="sheet-i mono">08</span><span data-i18n="nav.visit">Visit</span></a>
+  </nav>
+  <div class="sheet-foot">
+    <a class="btn btn-book" href="#visit" data-book data-i18n="sheet.book">Book a tee time</a>
+    <p class="mono sheet-meta" data-i18n="sheet.meta">First tee 06:00, Bangkok to Pathum Thani Rd, +66 2-598-2555</p>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- ============================== 00 / HERO ============================== -->
+<section class="hero tinted" id="home" aria-label="Flora Ville Golf & Country Club">
+  <div class="hero-grid shell">
+    <p class="hero-kicker mono" data-i18n="hero.kicker">Flora Ville Golf &amp; Country Club, Pathum Thani, est. 1998</p>
+    <h1 class="hero-title">
+      <span class="lm"><span class="l" data-i18n="hero.l1">Twelve lakes,</span></span>
+      <span class="lm"><span class="l" data-i18n="hero.l2">eighteen holes,</span></span>
+      <span class="lm"><span class="l hero-l3" data-i18n="hero.l3">45 minutes north.</span></span>
+    </h1>
+    <div class="hero-copy">
+      <p data-i18n="hero.sub">A Nick Faldo parkland in the Pathum Thani marshlands. Mature trees, glassy lakes, quick greens, and floodlights that keep the round going after dark.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#visit" data-book data-i18n="hero.book">Book a tee time</a>
+        <a class="btn btn-ghost" href="#round" data-i18n="hero.play">Play the eighteen</a>
+      </div>
+    </div>
+    <figure class="hero-fig">
+      <div class="hero-imgwrap"><img src="img/fv-rough.webp" alt="Early light raking across the mounds and mature trees of the fairways at Flora Ville" data-i18n-alt="hero.img" fetchpriority="high" width="1280" height="853"></div>
+      <figcaption class="mono" data-i18n="hero.cap">Morning on the out nine, dew still on the second cut.</figcaption>
+    </figure>
+    <ul class="hero-meta mono" aria-label="Key facts">
+      <li data-i18n="hero.m1">Par 72 / 6,728 yds</li>
+      <li data-i18n="hero.m2">First tee 06:00</li>
+      <li data-i18n="hero.m3">Night golf under floodlights</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================== stats strip ============================== -->
+<section class="stats" aria-label="Course facts">
+  <div class="shell stats-row mono">
+    <div class="stat"><span class="stat-k" data-i18n="st.1k">Design</span><span class="stat-v" data-i18n="st.1v">Nick Faldo</span></div>
+    <div class="stat"><span class="stat-k" data-i18n="st.2k">Card</span><span class="stat-v" data-i18n="st.2v">Par 72 / 6,728 yds</span></div>
+    <div class="stat"><span class="stat-k" data-i18n="st.3k">Rating</span><span class="stat-v" data-i18n="st.3v">CR 72.1 / Slope 130</span></div>
+    <div class="stat"><span class="stat-k" data-i18n="st.4k">Ground</span><span class="stat-v" data-i18n="st.4v">400+ rai of parkland</span></div>
+    <div class="stat"><span class="stat-k" data-i18n="st.5k">Opened</span><span class="stat-v" data-i18n="st.5v">1998 / clubhouse 2018</span></div>
+  </div>
+</section>
+
+<!-- ============================== 01 / THE COURSE ============================== -->
+<section class="sec course tinted" id="course">
+  <div class="shell">
+    <p class="label mono"><span data-i18n="course.label">01 / The course</span></p>
+    <h2 class="disp">
+      <span class="lm"><span class="l" data-i18n="course.t1">Position</span></span>
+      <span class="lm"><span class="l" data-i18n="course.t2">over power.</span></span>
+    </h2>
+    <div class="course-cols">
+      <div class="course-text">
+        <p class="lede" data-i18n="course.p1">Faldo drew a course that thinks. Flat, honest fairways bend around mature trees, open marsh, and the lakes that reach into twelve of the eighteen holes. The greens are small, firm and quick, so the right half of the fairway beats the long half.</p>
+        <p data-i18n="course.p2">Opened in 1998 as Chuan Chuen Golf Club, the course keeps its original bones. The clubhouse was rebuilt in 2018, a new team has run the place since 2023, and the greens now roll as true as anywhere north of the city.</p>
+        <p class="mono course-note" data-i18n="course.p3">Resident wildlife: egrets, monitor lizards, and the occasional gallery of estate dogs. All are considered spectators.</p>
+      </div>
+      <figure class="course-fig-a">
+        <img src="img/fv-fairway-water3.jpg" alt="Timber footbridge crossing still water at golden hour on the golf course" data-i18n-alt="course.fa" loading="lazy" width="1440" height="1080">
+        <figcaption class="mono" data-i18n="course.fac">Late light on the water crossings.</figcaption>
+      </figure>
+      <figure class="course-fig-b">
+        <img src="img/fv-green.jpg" alt="Compact golf green with a yellow flag, ringed by trees" data-i18n-alt="course.fb" loading="lazy" width="1536" height="1024">
+        <figcaption class="mono" data-i18n="course.fbc">Small targets, quick surfaces.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== bridge strip ============================== -->
+<section class="strip" aria-label="Crossing to the course">
+  <div class="strip-imgwrap">
+    <img src="img/main-course.webp" alt="Golfers and caddies crossing a stone bridge over the lake in a golf cart, backlit by low sun" data-i18n-alt="strip.img" loading="lazy" width="1920" height="488">
+  </div>
+  <p class="strip-cap mono shell" data-i18n="strip.cap">The cart path crosses water on the way out. So will your round.</p>
+</section>
+
+<!-- ============================== 02 / THE ROUND (signature) ============================== -->
+<section class="sec round" id="round">
+  <div class="shell round-intro">
+    <p class="label mono label-light"><span data-i18n="round.label">02 / The round</span></p>
+    <h2 class="disp disp-light">
+      <span class="lm"><span class="l" data-i18n="round.t1">Eighteen holes,</span></span>
+      <span class="lm"><span class="l" data-i18n="round.t2">dealt one by one.</span></span>
+    </h2>
+    <p class="round-sub" data-i18n="round.sub">Every plan below is the real hole, photographed from above. The card fills in as you play.</p>
+    <p class="mono round-hint" data-i18n="round.hint">↓ Scroll to play the round, or click any hole on the card</p>
+    <p class="mono round-hint-m" data-i18n="round.hintm">Tap a hole on the card, or swipe the plan</p>
+    <noscript><p class="round-sub">The interactive round needs JavaScript. The full scorecard is printed in the club's materials.</p></noscript>
+  </div>
+
+  <div class="round-stage" id="roundStage">
+    <div class="round-pin">
+      <div class="round-ui shell">
+        <div class="round-left">
+          <p class="mono round-holeword"><span data-i18n="round.hole">Hole</span></p>
+          <div class="round-num" id="rNum" aria-hidden="true"><span class="rn-cur">1</span></div>
+          <div class="round-meta mono">
+            <span class="r-par"><span data-i18n="round.par">Par</span> <b id="rPar">4</b></span>
+            <span class="r-wet" id="rWet"><span class="wet-dot" aria-hidden="true"></span><span data-i18n="round.water">water in play</span></span>
+          </div>
+          <table class="round-tees mono" aria-label="Yardage by tee">
+            <tbody>
+              <tr class="tee-blue"><th data-i18n="round.blue">Blue</th><td id="tB">398</td></tr>
+              <tr class="tee-white"><th data-i18n="round.white">White</th><td id="tW">371</td></tr>
+              <tr class="tee-yellow"><th data-i18n="round.yellow">Yellow</th><td id="tY">339</td></tr>
+              <tr class="tee-red"><th data-i18n="round.red">Red</th><td id="tR">315</td></tr>
+            </tbody>
+          </table>
+          <div class="round-notes">
+            <p class="round-note" data-hole="6" data-i18n="round.n6">One hundred and seventy three yards, most of them over water. The front is wet and the bunkers behind are deep. Take the middle of the green and be glad of your three.</p>
+            <p class="round-note" data-hole="8" data-i18n="round.n8">The longest four on the card, and the rarest thing at Flora Ville: no lake in sight. Four hundred and fifty seven yards of honest golf. Driver, long iron, no excuses.</p>
+            <p class="round-note" data-hole="12" data-i18n="round.n12">A five that never leaves the water's side. The lake runs the whole left of the fairway and folds in front of the green. Two placed shots beat one brave one.</p>
+            <p class="round-note" data-hole="18" data-i18n="round.n18">The closer. Five hundred and fifty yards snaking left between sand, to a green set behind water. Lay up, wedge on, and walk in with your par.</p>
+          </div>
+          <div class="rm-nav">
+            <button class="rm-btn" id="rmPrev" type="button" data-i18n="rm.prev">‹ Previous</button>
+            <button class="rm-btn" id="rmNext" type="button" data-i18n="rm.next">Next ›</button>
+          </div>
+        </div>
+        <div class="round-right">
+          <div class="round-imgbox" id="rImgBox" role="img" aria-label="Aerial plan of the current hole"></div>
+        </div>
+      </div>
+      <div class="round-card mono" id="rCard" aria-label="Scorecard">
+        <ol class="rc-holes" id="rcHoles"></ol>
+        <div class="rc-tot" id="rcTot"><span class="rc-out" id="rcOut" data-i18n="round.out">out 36 / 3,366</span><span class="rc-in" id="rcIn" data-i18n="round.in">in 36 / 3,362</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- full scorecard table -->
+  <div class="shell scorewrap">
+    <details class="score" id="score">
+      <summary class="mono" data-i18n="score.open">Open the full scorecard</summary>
+      <div class="score-scroll">
+        <table class="score-t mono" aria-label="Full scorecard, yards by tee">
+          <thead>
+            <tr><th data-i18n="score.h1">Hole</th><th data-i18n="score.h2">Par</th><th class="th-b" data-i18n="score.h3">Blue</th><th class="th-w" data-i18n="score.h4">White</th><th class="th-y" data-i18n="score.h5">Yellow</th><th class="th-r" data-i18n="score.h6">Red</th><th data-i18n="score.h7">Water</th></tr>
+          </thead>
+          <tbody id="scoreBody"><!-- rows injected --></tbody>
+        </table>
+      </div>
+      <p class="mono score-note" data-i18n="score.note">Blue 6,728 yds, CR 72.1, slope 130. White 6,209. Yellow 5,663. Red 5,109. Card as published by the club, checked Nov 2026.</p>
+    </details>
+  </div>
+</section>
+
+<!-- ============================== 03 / WATER ============================== -->
+<section class="sec water tinted" id="water">
+  <div class="shell">
+    <p class="label mono"><span data-i18n="water.label">03 / Local rules</span></p>
+    <h2 class="disp disp-ital">
+      <span class="lm"><span class="l" data-i18n="water.t1">Water,</span></span>
+      <span class="lm"><span class="l" data-i18n="water.t2">in play.</span></span>
+    </h2>
+    <div class="water-cols">
+      <div class="water-rules">
+        <p class="water-rule" data-i18n="water.r1">Lakes lie along holes 2, 3, 5, 6, 7, 9, 12, 13, 14, 15, 16 and 18. Play them as lateral hazards.</p>
+        <p class="water-rule" data-i18n="water.r2">On 2, 7, 12, 15 and 18 the water crosses your line. Drop zones are provided; pride is optional.</p>
+        <p class="water-rule water-rule-flower" data-i18n="water.r3">And the club's gentlest rule: cultivated flowerbeds are ground under repair. Land among the blossoms and you drop free.</p>
+      </div>
+      <figure class="water-fig">
+        <img src="img/fv-fairway-water.jpg" alt="Lotus pads floating in the shallows of a golf course lake, fairway beyond" data-i18n-alt="water.img" loading="lazy" width="1440" height="810">
+        <figcaption class="mono" data-i18n="water.cap">Lotus in the shallows. Your ball is safer than it looks, but not much.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 04 / FLORA ============================== -->
+<section class="sec flora tinted" id="flora">
+  <div class="shell">
+    <p class="label mono"><span data-i18n="flora.label">04 / The name</span></p>
+    <h2 class="disp">
+      <span class="lm"><span class="l" data-i18n="flora.t1">A ville of flora,</span></span>
+      <span class="lm"><span class="l" data-i18n="flora.t2">honestly named.</span></span>
+    </h2>
+    <div class="flora-grid">
+      <figure class="flora-a">
+        <img src="img/fv-tee-box2.webp" alt="Pink trumpet trees in full bloom leaning over the water beside a golf tee" data-i18n-alt="flora.fa" loading="lazy" width="1360" height="765">
+        <figcaption class="mono" data-i18n="flora.fac">Tabebuia over the water.</figcaption>
+      </figure>
+      <figure class="flora-b">
+        <img src="img/fv-greenside-bunker2.jpg" alt="Blossoming pink tree standing over pot bunkers beside the fairway" data-i18n-alt="flora.fb" loading="lazy" width="960" height="720">
+        <figcaption class="mono" data-i18n="flora.fbc">Blossom and sand, sharing a fairway.</figcaption>
+      </figure>
+      <p class="flora-p" data-i18n="flora.p">The estate keeps its word. Tabebuias lean over the tee boxes, lotus opens on the lakes, and the flowerbeds are tended like greens. The course reads less like a property and more like a garden that keeps a scorecard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== drifting gallery ============================== -->
+<section class="gal" aria-label="Around the estate">
+  <p class="mono gal-cap shell" data-i18n="gal.cap">Around the estate</p>
+  <div class="gal-track" id="galTrack">
+    <figure class="gal-item"><img src="img/fv-aerial-view.jpg" alt="Aerial view of the kidney shaped lake wrapping the fairways at Flora Ville" data-i18n-alt="gal.a1" loading="lazy" width="1536" height="1024"></figure>
+    <figure class="gal-item"><img src="img/fv-tee-box3.jpg" alt="Sunset behind silhouetted trees and a shelter beside the tee" data-i18n-alt="gal.a2" loading="lazy" width="1440" height="810"></figure>
+    <figure class="gal-item"><img src="img/fv-greenside-bunker.jpg" alt="White sand greenside bunker under a deep blue sky" data-i18n-alt="gal.a3" loading="lazy" width="960" height="720"></figure>
+    <figure class="gal-item"><img src="img/fv-fairway-water2.jpg" alt="Glassy lake reflecting the treeline along the fairway" data-i18n-alt="gal.a4" loading="lazy" width="960" height="540"></figure>
+    <figure class="gal-item"><img src="img/fv-clubhouse.jpg" alt="The glass clubhouse pavilion seen from the lawn" data-i18n-alt="gal.a5" loading="lazy" width="1535" height="1024"></figure>
+    <figure class="gal-item"><img src="img/fv-cart.jpg" alt="Two caddies in a golf cart on the course" data-i18n-alt="gal.a6" loading="lazy" width="960" height="720"></figure>
+    <figure class="gal-item"><img src="img/fv-fairway.jpg" alt="Open fairway under an evening sky" data-i18n-alt="gal.a7" loading="lazy" width="1440" height="810"></figure>
+  </div>
+</section>
+
+<!-- ============================== 05 / NIGHT ============================== -->
+<section class="sec night" id="night">
+  <div class="night-bg" aria-hidden="true"><img src="img/course-slide1.webp" alt="" loading="lazy" width="1090" height="680"></div>
+  <div class="shell night-grid">
+    <p class="label mono label-light"><span data-i18n="night.label">05 / After hours</span></p>
+    <h2 class="disp disp-light night-title">
+      <span class="lm"><span class="l" data-i18n="night.t1">The lights</span></span>
+      <span class="lm"><span class="l" data-i18n="night.t2">stay on.</span></span>
+    </h2>
+    <div class="night-copy">
+      <p class="lede" data-i18n="night.p1">Flora Ville is one of the few courses near Bangkok built for night golf. The floodlights turn the lakes black and the fairways emerald, and the city feels further away than it is.</p>
+      <ul class="night-times mono">
+        <li><span data-i18n="night.d1">Tue to Fri (except Wed)</span><b data-i18n="night.h1">tee off 15:00 to 18:00</b></li>
+        <li><span data-i18n="night.d2">Wed, Sat &amp; holidays</span><b data-i18n="night.h2">tee off 16:00 to 18:00</b></li>
+        <li><span data-i18n="night.d3">Groups</span><b data-i18n="night.h3">3 to 6 players, pairs may be joined</b></li>
+      </ul>
+      <a class="btn btn-glass" href="#visit" data-book data-i18n="night.cta">Book an evening round</a>
+    </div>
+    <figure class="night-fig">
+      <img src="img/club-05.webp" alt="Golfers on a floodlit green at dusk, bunkers glowing under the lights" data-i18n-alt="night.img" loading="lazy" width="970" height="612">
+      <figcaption class="mono" data-i18n="night.cap">Last light on the front, floodlight on the back.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================== 06 / CLUBHOUSE ============================== -->
+<section class="sec club tinted" id="club">
+  <div class="shell">
+    <p class="label mono"><span data-i18n="club.label">06 / The clubhouse</span></p>
+    <h2 class="disp">
+      <span class="lm"><span class="l" data-i18n="club.t1">Rebuilt in 2018,</span></span>
+      <span class="lm"><span class="l" data-i18n="club.t2">run like 2026.</span></span>
+    </h2>
+    <p class="club-lede lede" data-i18n="club.p1">The old clubhouse came down and a pavilion of glass and timber went up, with long views over the eighteenth and cold towels at the door. Since 2023 the polish shows everywhere, from the locker rooms to the practice green.</p>
+    <div class="club-grid">
+      <figure class="ccard ccard-w">
+        <div class="ccard-imgwrap"><img src="img/club-02.webp" alt="Clubhouse lounge with cream armchairs facing floor to ceiling windows over the course" data-i18n-alt="club.f1" loading="lazy" width="970" height="612"></div>
+        <figcaption><b data-i18n="club.c1t">Restaurant &amp; lounge</b><span data-i18n="club.c1d">Thai and international kitchen, every table facing green.</span></figcaption>
+      </figure>
+      <figure class="ccard">
+        <div class="ccard-imgwrap"><img src="img/club-03.webp" alt="Locker room in dark timber with a long central bench" data-i18n-alt="club.f2" loading="lazy" width="970" height="612"></div>
+        <figcaption><b data-i18n="club.c2t">Locker rooms</b><span data-i18n="club.c2d">Dark timber, rain showers, unhurried.</span></figcaption>
+      </figure>
+      <figure class="ccard">
+        <div class="ccard-imgwrap"><img src="img/club-04.webp" alt="Pro shop interior with apparel walls and a curved counter" data-i18n-alt="club.f3" loading="lazy" width="970" height="612"></div>
+        <figcaption><b data-i18n="club.c3t">Pro shop</b><span data-i18n="club.c3d">Clubs, shoes and umbrellas to hire; advice free.</span></figcaption>
+      </figure>
+      <figure class="ccard ccard-w">
+        <div class="ccard-imgwrap"><img src="img/fv-restaurant.jpg" alt="Bar and dining room in the evening, booths lit low" data-i18n-alt="club.f4" loading="lazy" width="1342" height="755"></div>
+        <figcaption><b data-i18n="club.c4t">The nineteenth</b><span data-i18n="club.c4d">Booths, a proper bar, and the post-round argument about hole 12.</span></figcaption>
+      </figure>
+      <div class="ccard ccard-text">
+        <p class="mono ccard-k" data-i18n="club.c5t">Also on the grounds</p>
+        <ul class="ccard-list">
+          <li data-i18n="club.l1">Driving range &amp; practice green</li>
+          <li data-i18n="club.l2">Sports club with fitness rooms &amp; trainers</li>
+          <li data-i18n="club.l3">Banquet &amp; meeting rooms for corporate days</li>
+          <li data-i18n="club.l4">GPS carts, caddies, spa &amp; massage</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 07 / TEE SHEET ============================== -->
+<section class="sec plan" id="plan">
+  <div class="shell">
+    <p class="label mono"><span data-i18n="plan.label">07 / The tee sheet</span></p>
+    <h2 class="disp">
+      <span class="lm"><span class="l" data-i18n="plan.t1">The day,</span></span>
+      <span class="lm"><span class="l" data-i18n="plan.t2">arranged.</span></span>
+    </h2>
+
+    <!-- the day, drawn as a rail -->
+    <div class="dayrail" role="img" aria-label="Tee sheet timeline from 06:00 to 18:00">
+      <div class="dr-track">
+        <div class="dr-bar dr-am"><span class="mono" data-i18n="dr.am">06:00 to 11:20, groups of 2 to 5</span></div>
+        <div class="dr-bar dr-md"><span class="mono" data-i18n="dr.md">11:28 to 14:56, groups of 2 to 6</span></div>
+        <div class="dr-bar dr-ng"><span class="mono" data-i18n="dr.ng">Night golf from 15:00</span></div>
+      </div>
+      <div class="dr-scale mono" aria-hidden="true">
+        <span>06:00</span><span>09:00</span><span>12:00</span><span>15:00</span><span>18:00</span>
+      </div>
+      <p class="mono dr-note" data-i18n="dr.note">Groups leave every 8 minutes. The standard round is 4 h 20. Weekends: groups of 3 to 5, night golf from 16:00.</p>
+    </div>
+
+    <div class="plan-chips">
+      <p class="plan-chip mono" data-i18n="pc.1">Walk-ins: call one day ahead</p>
+      <p class="plan-chip mono" data-i18n="pc.2">Cancel 24 h before your time</p>
+      <p class="plan-chip mono" data-i18n="pc.3">Collars on, spikes soft, denim never</p>
+    </div>
+
+    <div class="plan-cols">
+      <div class="plan-col">
+        <h3 class="mono plan-h" data-i18n="plan.rateh">Paying</h3>
+        <dl class="plan-list">
+          <div><dt data-i18n="plan.r1t">18 holes + caddie + cart</dt><dd data-i18n="plan.r1d">from ฿2,900 weekdays, ฿3,100 weekends</dd></div>
+          <div><dt data-i18n="plan.r2t">Caddie</dt><dd data-i18n="plan.r2d">฿400, and a ฿400 tip is the going rate for a good read</dd></div>
+          <div><dt data-i18n="plan.r3t">Single cart</dt><dd data-i18n="plan.r3d">฿700</dd></div>
+          <div><dt data-i18n="plan.r4t">Club hire</dt><dd data-i18n="plan.r4d">฿1,000. Shoes ฿200, umbrella ฿100, free with clubs</dd></div>
+          <div><dt data-i18n="plan.r5t">Followers</dt><dd data-i18n="plan.r5d">฿1,000 per person, never on the greens</dd></div>
+        </dl>
+        <p class="mono plan-note" data-i18n="plan.note">Package rates via booking agents, Apr to Oct 2026 season. Confirm with the club when you book.</p>
+      </div>
+      <div class="plan-col">
+        <h3 class="mono plan-h" data-i18n="faq.h">Questions, answered</h3>
+        <div class="faq">
+          <details class="faq-i">
+            <summary data-i18n="faq.q1">How far is Flora Ville from Bangkok?</summary>
+            <p data-i18n="faq.a1">About 45 minutes from central Bangkok by expressway, and 13 km from Don Mueang airport. The address is 110 Moo 8, Bangkok to Pathum Thani Road, Bang Khu Wat.</p>
+          </details>
+          <details class="faq-i">
+            <summary data-i18n="faq.q2">Can I play golf at night?</summary>
+            <p data-i18n="faq.a2">Yes. The course is floodlit. Tee off from 15:00 Tuesday to Friday, and from 16:00 on Wednesdays, Saturdays and holidays. The last groups leave at 18:00.</p>
+          </details>
+          <details class="faq-i">
+            <summary data-i18n="faq.q3">How much does a round cost?</summary>
+            <p data-i18n="faq.a3">Agent packages with 18 holes, a caddie and a cart start around ฿2,900 on weekdays and ฿3,100 on weekends. Caddie fee ฿400, single cart ฿700. Confirm rates when you book.</p>
+          </details>
+          <details class="faq-i">
+            <summary data-i18n="faq.q4">How do I book a tee time?</summary>
+            <p data-i18n="faq.a4">Call +66 2-598-2555, message LINE @floravillegolf, or email sale.1@floravillegolf.com. Walk-ins should call one day ahead.</p>
+          </details>
+          <details class="faq-i">
+            <summary data-i18n="faq.q5">What is the dress code?</summary>
+            <p data-i18n="faq.a5">Collared shirts and tailored shorts or slacks, with soft spike golf shoes. No denim on the course. Smart casual in the clubhouse.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+    <div class="heard">
+      <p class="mono heard-h" data-i18n="heard.h">Heard on the course: recurring golfer feedback, 2026</p>
+      <div class="heard-row">
+        <p class="heard-card" data-i18n="heard.1">“Conditioning has jumped. Firm, fast greens and bunkers raked like new.”</p>
+        <p class="heard-card" data-i18n="heard.2">“Caddies read the grain better than my rangefinder reads yardage.”</p>
+        <p class="heard-card" data-i18n="heard.3">“Night golf here is the best kept secret within an hour of Bangkok.”</p>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "How far is Flora Ville from Bangkok?", "acceptedAnswer": { "@type": "Answer", "text": "About 45 minutes from central Bangkok by expressway, and 13 km from Don Mueang airport. The address is 110 Moo 8, Bangkok to Pathum Thani Road, Bang Khu Wat, Pathum Thani 12000." } },
+    { "@type": "Question", "name": "Can I play golf at night at Flora Ville?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. The course is floodlit for night golf. Tee off from 15:00 Tuesday to Friday, and from 16:00 on Wednesdays, Saturdays and holidays. The last groups leave at 18:00." } },
+    { "@type": "Question", "name": "How much does a round cost at Flora Ville?", "acceptedAnswer": { "@type": "Answer", "text": "Agent packages with 18 holes, a caddie and a cart start around 2,900 baht on weekdays and 3,100 baht on weekends. Caddie fee 400 baht, single cart 700 baht. Confirm rates with the club when you book." } },
+    { "@type": "Question", "name": "How do I book a tee time at Flora Ville?", "acceptedAnswer": { "@type": "Answer", "text": "Call +66 2-598-2555, message LINE @floravillegolf, or email sale.1@floravillegolf.com. Walk-in players should call one day ahead." } },
+    { "@type": "Question", "name": "What is the dress code at Flora Ville?", "acceptedAnswer": { "@type": "Answer", "text": "Collared shirts and tailored shorts or slacks, with soft spike golf shoes. No denim on the course. Smart casual in the clubhouse." } }
+  ]
+}
+</script>
+
+<!-- ============================== 08 / VISIT / BOOK ============================== -->
+<section class="sec visit" id="visit">
+  <div class="visit-bg" aria-hidden="true"><img src="img/hero.webp" alt="" loading="lazy" width="1920" height="1080"></div>
+  <div class="shell visit-grid">
+    <p class="label mono label-light"><span data-i18n="visit.label">08 / First tee</span></p>
+    <h2 class="disp disp-light">
+      <span class="lm"><span class="l" data-i18n="visit.t1">Take</span></span>
+      <span class="lm"><span class="l" data-i18n="visit.t2">the morning.</span></span>
+    </h2>
+    <p class="visit-lede" data-i18n="visit.p1">Online booking is on its way back. For now the phone is quicker, or send a LINE and the tee sheet answers within the hour.</p>
+    <div class="visit-actions">
+      <button class="btn btn-solid btn-lg" type="button" data-book><span data-i18n="visit.plan">Plan your tee time</span><span class="mono btn-sub" data-i18n="visit.plansub">We draft the message for you</span></button>
+      <a class="btn btn-glass btn-lg" href="tel:+6625982555"><span data-i18n="visit.call">Call reservations</span><span class="mono btn-sub">+66 2-598-2555</span></a>
+      <a class="btn btn-glass btn-lg" href="https://line.me/R/ti/p/@floravillegolf" target="_blank" rel="noopener"><span data-i18n="visit.line">LINE the club</span><span class="mono btn-sub">@floravillegolf</span></a>
+    </div>
+    <div class="map" id="fvMap">
+      <div class="map-stage" id="mapStage" tabindex="0" aria-label="Satellite map around Flora Ville Golf and Country Club. Drag to move, use plus and minus to zoom.">
+        <canvas id="mapCanvas"></canvas>
+        <div class="map-pin" id="mapPin" aria-hidden="true"><span class="map-pin-dot"></span><span class="map-pin-label mono">Flora Ville</span></div>
+        <div class="map-zoom">
+          <button class="map-zbtn" id="mapZin" type="button" aria-label="Zoom in">+</button>
+          <button class="map-zbtn" id="mapZout" type="button" aria-label="Zoom out">−</button>
+        </div>
+        <p class="mono map-hint" id="mapHint" data-i18n="map.hint">Drag to explore, pinch or scroll to zoom</p>
+        <p class="mono map-attr">Imagery: Esri, Maxar, Earthstar Geographics</p>
+      </div>
+      <div class="map-fallback" id="mapFallback" hidden>
+        <img src="img/fv-aerial-view.jpg" alt="" loading="lazy" aria-hidden="true">
+        <p class="mono" data-i18n="map.fb">The live map is available on the full site.</p>
+      </div>
+      <p class="mono map-link"><a href="https://maps.google.com/?q=Flora+Ville+Golf+%26+Country+Club" target="_blank" rel="noopener" data-i18n="visit.f4d">Open in Google Maps ↗</a></p>
+    </div>
+    <dl class="visit-facts mono">
+      <div><dt data-i18n="visit.f1t">Address</dt><dd data-i18n="visit.f1d">110 Moo 8, Bangkok to Pathum Thani Rd, Bang Khu Wat, Mueang Pathum Thani 12000</dd></div>
+      <div><dt data-i18n="visit.f2t">From town</dt><dd data-i18n="visit.f2d">About 45 min from central Bangkok via expressway, 13 km from Don Mueang</dd></div>
+      <div><dt data-i18n="visit.f3t">Pro shop</dt><dd><a href="tel:+66886283993">+66 88-628-3993</a> / <span data-i18n="visit.f3d">marketing</span> <a href="tel:+66922258715">+66 92-225-8715</a></dd></div>
+      <div><dt data-i18n="visit.f5t">Email</dt><dd><a href="mailto:sale.1@floravillegolf.com">sale.1@floravillegolf.com</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============================== FOOTER ============================== -->
+<footer class="foot">
+  <div class="shell foot-grid">
+    <div class="foot-brand">
+      <img src="img/logo-a.png" alt="Flora Ville monogram" width="44" height="44" loading="lazy">
+      <p class="foot-name">Flora Ville Golf &amp; Country Club</p>
+      <p class="mono foot-thai">ฟลอร่าวิลล์ กอล์ฟ แอนด์ คันทรี คลับ, ปทุมธานี</p>
+    </div>
+    <div class="foot-col mono">
+      <p data-i18n="foot.a1">110 Moo 8, Bangkok to Pathum Thani Road</p>
+      <p data-i18n="foot.a2">Bang Khu Wat, Mueang Pathum Thani 12000</p>
+      <p><a href="tel:+6625982555">+66 2-598-2555</a><br><a href="mailto:sale.1@floravillegolf.com">sale.1@floravillegolf.com</a></p>
+    </div>
+    <div class="foot-col mono">
+      <p><a href="https://www.facebook.com/FloraVilleGolf" target="_blank" rel="noopener">Facebook: FloraVilleGolf ↗</a></p>
+      <p><a href="https://line.me/R/ti/p/@floravillegolf" target="_blank" rel="noopener">LINE: @floravillegolf ↗</a></p>
+      <p><a href="https://www.floravillegolf.com" target="_blank" rel="noopener">floravillegolf.com ↗</a></p>
+    </div>
+  </div>
+  <div class="shell foot-legal mono">
+    <p data-i18n="foot.legal">An unofficial concept redesign. Course data, policies and imagery come from the club's own materials, first gathered Aug 2026 and checked Nov 2026. Confirm details with the club before you travel. The club has been managed by Summit Seoyon Business Development (Thailand) Co., Ltd. since 2023.</p>
+    <a class="foot-top" href="#top" data-i18n="foot.top">Back to the first tee ↑</a>
+  </div>
+  <div class="shell o2-row">
+    <a class="o2-credit" href="https://o2-designstudio.com/" target="_blank" rel="noopener noreferrer" aria-label="Website by O2 Design Studio (opens in a new tab)">
+      <span class="o2-lockup" lang="en">
+        <svg class="o2-mark" viewBox="0 0 158.1 129.7" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M56.99 99.51A50 50 0 0 1 33.88 2.67L38 10.97A40.84 40.84 0 0 0 52.65 90.75ZM42.27 0.6A50 50 0 0 1 66.45 97.22L62.34 88.93A40.84 40.84 0 0 0 46.59 9.31ZM157.94 74.78L148.9 74.77C147.72 72.56 147.05 70.73 145.23 68.89C138.08 61.67 125.49 63.06 119.44 70.92L118.43 72.68C116.33 76.4 116.59 78.85 116.23 82.89C113.81 83.15 109.39 83.26 107.04 82.84C106.96 80.45 106.94 77.98 107.43 75.63C109.72 64.58 119.41 55.88 130.73 55.04C140.97 54.28 151.46 58.93 156.12 68.39C157.1 70.38 158.02 72.54 157.94 74.78ZM148.84 83.59C151.04 83.14 155.75 83.23 158.04 83.51C157.97 85.63 157.24 87.64 156.34 89.53C153.35 95.79 148.24 98.9 142.26 101.9C137.63 104.22 133.19 106.96 128.53 109.23C126.42 110.25 120.74 112.92 119.24 114.34C116.45 116.97 117.29 117.47 116.13 119.2L114.32 121.49C112.04 121.8 109.41 121.77 107.13 121.51C106.19 114 111.68 108.04 117.74 104.62C124.34 100.89 131.24 97.68 137.85 93.97C143.08 91.03 146.6 89.67 148.84 83.59ZM121.53 120.51C124.54 119.99 135.15 120.36 138.93 120.36C142.92 120.36 154.81 119.99 157.91 120.49L157.85 129.51C154.88 129.77 151.82 129.6 148.83 129.59L135.02 129.59C130.67 129.59 119.91 129.95 116.29 129.48C117.52 126.27 119.99 123.58 121.53 120.51Z"/>
+        </svg>
+        Design Studio
+      </span>
+    </a>
+  </div>
+</footer>
+
+</main>
+
+<!-- floating actions -->
+<button class="fab fab-top" id="fabTop" type="button" aria-label="Back to top">↑</button>
+<button class="fab fab-book" id="fabBook" type="button" data-book><span data-i18n="fab.book">Book</span></button>
+
+<!-- tee time sheet -->
+<div class="bsheet" id="bsheet" role="dialog" aria-modal="true" aria-labelledby="bsTitle" hidden>
+  <div class="bs-backdrop" id="bsBackdrop"></div>
+  <div class="bs-panel">
+    <button class="bs-close" id="bsClose" type="button" aria-label="Close">✕</button>
+    <p class="label mono label-light"><span data-i18n="bs.k">Tee time</span></p>
+    <h2 class="bs-title" id="bsTitle" data-i18n="bs.title">Plan your round</h2>
+    <p class="bs-sub" data-i18n="bs.sub">Pick a day and a window. We draft the message; the club confirms.</p>
+    <div class="bs-fields">
+      <label class="bs-field"><span class="mono" data-i18n="bs.date">Date</span><input type="date" id="bsDate"></label>
+      <label class="bs-field"><span class="mono" data-i18n="bs.win">Window</span>
+        <select id="bsWin">
+          <option value="w1" data-i18n="bs.w1">Dawn, 06:00 to 08:00</option>
+          <option value="w2" selected data-i18n="bs.w2">Morning, 08:00 to 11:20</option>
+          <option value="w3" data-i18n="bs.w3">Midday, 11:28 to 14:56</option>
+          <option value="w4" data-i18n="bs.w4">Night golf, from 15:00</option>
+        </select>
+      </label>
+      <label class="bs-field"><span class="mono" data-i18n="bs.players">Players</span>
+        <select id="bsPlayers"><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6</option></select>
+      </label>
+      <label class="bs-field"><span class="mono" data-i18n="bs.name">Name (optional)</span><input type="text" id="bsName" autocomplete="name"></label>
+    </div>
+    <p class="mono bs-msgk" data-i18n="bs.msg">Your message</p>
+    <p class="bs-msg" id="bsMsg"></p>
+    <div class="bs-actions">
+      <a class="btn btn-solid" id="bsCall" href="tel:+6625982555"><span data-i18n="bs.call">Call and read it out</span></a>
+      <button class="btn btn-glass" id="bsLine" type="button"><span data-i18n="bs.line">Copy, then open LINE</span></button>
+      <a class="btn btn-glass" id="bsMail" href="mailto:sale.1@floravillegolf.com"><span data-i18n="bs.mail">Send by email</span></a>
+    </div>
+    <p class="mono bs-note" id="bsNote" data-i18n="bs.note">Booking is confirmed by the club, not this page. Walk-ins call one day ahead.</p>
+  </div>
+</div>
+
+</body>
+</html>

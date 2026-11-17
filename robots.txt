@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mpc0367.github.io/floraville/sitemap.xml
